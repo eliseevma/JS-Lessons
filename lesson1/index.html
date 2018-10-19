@@ -21,14 +21,16 @@
             new MenuItem('/', 'Home'),
             new MenuItem('/about', 'About'),
             new MenuItem('/blog', 'Blog'),
-            // new SubMenu('me', 'me', [
-            //     new MenuItem('/', 'Home'),
-            //     new MenuItem('/about', 'About'),
-            //     new MenuItem('/blog', 'Blog'),
-            // ])
+
+        new SubMenu('me', 'me', [
+                new MenuItem('/', 'Home'),
+                new MenuItem('/about', 'About'),
+                new MenuItem('/blog', 'Blog'),
+            ])
         ]);
 
         menu1.innerHTML = menu.render();
+        
 
         let btn = document.createElement('input');
         btn.type = 'button';

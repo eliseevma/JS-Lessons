@@ -7,6 +7,9 @@ class SubMenu {
     render(){
         let result = `<ul class="${this.className}" id="${this.id}">`;
         for (let i = 0; i < this.items.length; i++) {
+            if (this.items[i] instanceof Menu){
+                result += this.items[i].render();
+            }
             if (this.items[i] instanceof MenuItem){
                 result += this.items[i].render();
             }
