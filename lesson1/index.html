@@ -18,7 +18,7 @@
         let menu1 = document.getElementById('mymenu');
 
         let menu = new Menu('my', 'my', [
-            new MenuItem('/', 'Home', 'link'),
+            new MenuItem('/', 'Home'),
             new MenuItem('/about', 'About'),
             new MenuItem('/blog', 'Blog'),
             // new SubMenu('me', 'me', [
@@ -34,7 +34,7 @@
         btn.type = 'button';
         btn.value = 'close';
         document.body.appendChild(btn);
-        btn.addEventListener('click', () => document.getElementById('my').remove()) ;
+        btn.addEventListener('click', () => document.getElementById(this.id).remove()) ;
     }
 </script>
 </body>
