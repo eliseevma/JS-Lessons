@@ -7,6 +7,7 @@
 <body>
 
 <div id="mymenu"></div>
+<button id="remove-btn">Remove</button>
 
 <script src="lesson1.js"></script>
 <script src="MenuItem.js"></script>
@@ -31,11 +32,15 @@
 
         menu1.innerHTML = menu.render();
 
-        let btn = document.createElement('input');
-        btn.type = 'button';
-        btn.value = 'close';
-        document.body.appendChild(btn);
-        btn.addEventListener('click', () => document.getElementById(this.id).remove()) ;
+        let btn = document.getElementById('remove-btn');
+        btn.addEventListener('click', () => {
+            menu.removeEl();
+        })
+         // let btn = document.createElement('input');
+        // btn.type = 'button';
+        // btn.value = 'close';
+        // document.body.appendChild(btn);
+        // btn.addEventListener('click', () => document.getElementById(this.id).remove()) ;
     }
 </script>
 </body>

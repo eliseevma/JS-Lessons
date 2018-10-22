@@ -17,4 +17,12 @@ class Menu {
         result += `</ul>`;
         return result;
     }
+
+    removeEl() {
+        let el = document.getElementById(this.id);
+        if (el){
+            el.remove();
+            // el.parentNode.removeChild(el);
+        }
+    }
 }
