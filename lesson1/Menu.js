@@ -8,10 +8,10 @@ class Menu {
     render() {
         let result = `<ul class="${this.className}" id="${this.id}">`;
         for (let i = 0; i < this.items.length; i++) {
-            if (this.items[i] instanceof MenuItem) {
+            if (this.items[i] instanceof MenuItem || this.items[i] instanceof SubMenu) {
                 result += this.items[i].render();
-            } else if (this.items[i] instanceof SubMenu) {
-                result += this.items[i].render();
+            // } else if (this.items[i] instanceof SubMenu) {
+            //     result += this.items[i].render();
             }
         }
         result += `</ul>`;
@@ -24,5 +24,17 @@ class Menu {
             el.remove();
             // el.parentNode.removeChild(el);
         }
+    }
+}
+
+class SubMenu extends Menu {
+    constructor (href, title, id, className, items) {
+        super (id, className, items);
+        this.href = href;
+        this.title = title;
+    }
+
+    render () {
+        return `<li><a href="${this.href}" id="${this.id}">${this.title}</a>${super.render()}</li>`;
     }
 }
