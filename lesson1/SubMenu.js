@@ -1,11 +1,11 @@
-// class SubMenuOld extends  Menu{
-//     constructor (id, className, items) {
-//         super (id, className, items);
-//     }
-//     render() {
-//         let result = `<li class="li">`;
-//         result += super.render();
-//         result += `</li>`;
-//         return result;
-//     }
-// }
+class SubMenu extends Menu {
+    constructor(href, title, id, className, items) {
+        super(id, className, items);
+        this.href = href;
+        this.title = title;
+    }
+
+    render() {
+        return `<li><a href="${this.href}" id="${this.id}">${this.title}</a>${super.render()}</li>`;
+    }
+}
