@@ -1,3 +1,6 @@
+body .gallery-wrap{
+    margin: 0 auto;
+}
 .gallery-wrap {
     width: 1100px;
     padding: 100px;
