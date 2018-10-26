@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="gallery"></div>
+<div class="gallery-wrap"></div>
+<script src="Gallery.js"></script>
+<script src="Modal.js"></script>
+<script>
+    window.onload = () => {
+        let mygallery = new Gallery('gallery.json', '.gallery-wrap');
+    }
+</script>
 </body>
 </html>
