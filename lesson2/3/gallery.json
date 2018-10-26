@@ -1,0 +1,26 @@
+[
+  {
+    "src": "img/pen.jpg",
+    "alt": "This is pen"
+  },
+  {
+    "src": "img/pencil.jpg",
+    "alt": "This is pencil"
+  },
+  {
+    "src": "img/rubber.jpg",
+    "alt": "This is rubber"
+  },
+  {
+    "src": "img/ruler.jpg",
+    "alt": "This is ruler"
+  },
+  {
+    "src": "img/notebook.jpg",
+    "alt": "This is notebook"
+  },
+  {
+    "src": "img/stickers.jpg",
+    "alt": "This is stickers"
+  }
+]
