@@ -8,7 +8,79 @@
 <script>
     'use strict';
 
-    hhdhhedfsdfsdf
+    //Синтаксис1
+    //let regexp = new RegExp('регулярное выражение', 'флаги')
+
+    //Синтаксис2
+    // let regexp = /регулярное выражение/флаги
+
+    let str = 'Язык JavaScript называется так из-за популярности языка Java';
+    let regexp = new  RegExp('java', 'g');
+    //search - выполняет проверку
+    // не поспринимает флаг g
+    // -1 - ничего не найдено по шаблону
+    //возвращает индекс первого вхождения
+    console.log(str.search(regexp))
+
+    // Флаги
+    // i - не чувствителен к регистру поиск
+    // g - глобальный поииск
+    // m - многострочный \n
+
+    console.log(str.match(/java/i));
+
+    //Замена
+    console.log('+7 (999) 111-22-33'.replace('-', ':'));
+    console.log('+7 (999) 111-22-33'.replace(/-/g, ':'));
+
+    let name = 'Smith, John';
+    // $& - весь найденый запрос
+    console.log(name.replace(/([a-z]+), ([a-z]+)/i, '$2 $1'));
+
+    //Со стороны RegExp
+    //test
+    //exec
+
+    console.log(/java/.test(str));
+    console.log(/java/i.test(str));
+
+    // Классы
+    // \d - [0123456789] - [0-9] -цыфры
+    // \s - space, tub, \n
+    // \w - [a-z0-9_]
+    // [a-яА-ЯЁё] - кирилица
+    // \b - границы слова
+    // \D  [^0123456789] -[^0-9] - все кроме цифр
+    // \S - все кроме пробельных символов
+    // \W - [^a-z0-9_]
+    // \B - все кроме границ слова
+
+    // Кванификаторы
+    // {m} - строго m символов
+    // {m, n} - от m символов до n символов
+    // {m,} - от m до бесконечности
+    // {0 ,m} - от 0 до m
+    // + - {1, }
+    // ? - {0, 1}
+    // * - {0, }
+
+    console.log('+7 (999) 111-22-33'.match(/\d+/g).join());
+
+    console.log(' Языки JS, PHP и HTML5'.match(/\w{4}\d/));
+    console.log(' Языки JS, PHP и HTML5'.match(/\w{4}\d/g));
+
+
+    //exec
+
+    console.log(/java/i.exec(str));
+
+    //С флогм g
+    let result;
+    let regExpExect = /java/ig;
+
+    while (result = regExpExect.exec(srt)){
+        console.log(result);
+    }
 </script>
 </body>
 </html>
