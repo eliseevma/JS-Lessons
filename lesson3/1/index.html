@@ -23,6 +23,12 @@
     Two: 'I'll see you next time.'
     One: 'Sure. Bye.'
 </p>
-
+<button id="btn">Replace</button>
+<script>
+    let block = document.getElementById('text-container');
+    document.getElementById('btn').addEventListener('click', () => {
+        block.textContent = block.textContent.replace(/'/g, '"');
+    });
+</script>
 </body>
 </html>
