@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<form action="#" class="subForm" id="subForm">
+    <div>
+        <label for="name">Yor name <br>
+            <input type="text" name="name" id="name">
+        </label>
+    </div>
+    <div>
+        <label for="phone">Yor phone <br>
+            <input type="tel" name="phone" id="phone">
+        </label>
+    </div>
+    <div>
+        <label for="email">Yor email <br>
+            <input type="email" name="email" id="email">
+        </label>
+    </div>
+    <button id="submit">Submit</button>
+</form>
+<script src="Validation.js"></script>
+<script>
+    window.onload = () => {
+        document.getElementById('subForm').addEventListener('submit', e => {
+            e.preventDefault();
+        })
+    }
+</script>
+</body>
+</html>
