@@ -10,7 +10,7 @@ input:focus {
 
 button {
     border: none;
-    background: rebeccapurple;
+    background: purple;
     color: white;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -18,7 +18,7 @@ button {
     border-radius: 5px;
 }
 
-.error-msq {
+.error-msg {
     color: red;
     margin: 10px 0;
 }

@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="#" class="subForm" id="subForm">
+<form action="" class="some" id="subForm">
     <div>
-        <label for="name">Yor name <br>
+        <label>
+            Your name <br>
             <input type="text" name="name" id="name">
         </label>
     </div>
     <div>
-        <label for="phone">Yor phone <br>
+        <label>
+            Your phone <br>
             <input type="tel" name="phone" id="phone">
         </label>
     </div>
     <div>
-        <label for="email">Yor email <br>
+        <label>
+            Your email <br>
             <input type="email" name="email" id="email">
         </label>
     </div>
-    <button id="submit">Submit</button>
+    <button id="val-btn">Submit</button>
 </form>
-<script src="Validation.js"></script>
+<script src="Validator.js"></script>
 <script>
     window.onload = () => {
         document.getElementById('subForm').addEventListener('submit', e => {
             e.preventDefault();
+            let valid = new Validator('subForm');
         })
     }
 </script>
