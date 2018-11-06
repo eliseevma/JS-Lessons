@@ -30,7 +30,11 @@
 
 <div class="ajaxData"></div>
 <button class="ajaxGet">Get data</button>
+<hr>
+<input type="text" class="phone">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos ipsam labore nihil optio ratione voluptate? Consectetur optio reprehenderit velit.
 <script src="jQuery.js"></script>
+<script src="jquery.mask.js"></script>
 <script>
     console.log(jQuery, $);
 
@@ -118,6 +122,9 @@
                 }
             });
         })
+
+        //Jquery
+        $('.phone').mask('+7 (000) 000-00-00')
     });
 </script>
 </body>

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b06d5cd5-18c7-408d-bb4f-80c873751e50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson4/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/lesson4.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/lesson4.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +45,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="224" />
-          <entry key="html" value="2572" />
+          <entry key="html" value="2679" />
           <entry key="js" value="2451" />
           <entry key="json" value="182" />
         </counts>
@@ -55,7 +53,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="225" />
-          <entry key="HTML" value="2622" />
+          <entry key="HTML" value="2729" />
           <entry key="JSON" value="182" />
           <entry key="JavaScript" value="2400" />
         </counts>
@@ -120,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson4/lesson4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+            <state relative-caret-position="700">
+              <caret line="126" column="43" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -303,7 +301,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48152000" />
+    <option name="totallyTimeSpent" value="48831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -537,8 +535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson4/lesson4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+        <state relative-caret-position="700">
+          <caret line="126" column="43" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
         </state>
       </provider>
     </entry>
