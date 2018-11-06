@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .orange{
+            background-color: orange;
+            color: white;
+        }
+        .strong{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+<p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, rerum?</p>
+<p id="text">Ducimus maiores perferendis provident quisquam, quos sed suscipit unde? Nulla.</p>
+<p>Amet cumque, doloremque illum inventore nostrum numquam. Beatae, non, totam.</p>
+<p class="text1">Architecto at cupiditate dolorem ipsa laborum magnam necessitatibus numquam, ullam.</p>
+<p>Consequatur, cupiditate dolore molestiae nesciunt quisquam quod sunt tempore vero!</p>
+<p>Hic labore minus molestias odio, optio similique tenetur! In, libero?</p>
+<p class="text1">Aliquam excepturi hic maxime non obcaecati quibusdam ratione repellat? Iure?</p>
+<hr>
+<div class="content">Lorem Consequatur, cupiditate dolore molestiae nesciunt quisquam quod sunt tempore vero!</div>
+<button class="open">Open</button>
+<button class="close">Close</button>
+<button class="toggle">Toggle</button>
+
 <script src="jQuery.js"></script>
 <script>
     console.log(jQuery, $);
@@ -17,15 +39,60 @@
     // });
     //
     //IIFE
-    $(function ($) {
-        $(function () {
-
-        })
-    })(jQuery);
+    // $(function ($) {
+    //     $(function () {
+    //
+    //     })
+    // })(jQuery);
 
 
     $(document).ready(function () {
+        $('p').addClass('orange');
+        // $('#text').css('color', 'red');
+        // $('.text1').css({
+        //     color: 'red',
+        //     fontSize: '2em',
+        // });
+        // $('p').eq(3).addClass('strong');
+        //более быстрый вариант
+        $('p:eq(4)').addClass('strong');
 
+        // $('p:last').addClass('orange');
+        // $('p:first').addClass('orange');
+
+        //Перебор елементов
+        $('p').each(function (index, item) {
+            console.log(index, item);
+            // item.classList.add('bg')   // JS
+            // $(item).addClass('bg') //Jquery
+        });
+
+        //Работа сс событиями
+
+        let $block = $('.content');
+        let $btnOpen = $('.open');
+        let $btnClose = $('.close');
+        let $btnToggle = $('.toggle');
+
+        //$btnOpen.click(() => {})
+
+        //$wrapper.on('click', 'some-img', func)
+
+        $btnOpen.on('click', function () {
+            // $block.show();
+            // $block.slideDown(2000);
+            $block.fadeIn(2000)
+        });
+        $btnClose.on('click', function () {
+            // $block.hide();
+            // $block.slideUp(2000);
+            $block.fadeOut(2000)
+        });
+        $btnToggle.on('click', function () {
+            // $block.toggle();
+            // $block.slideToggle(2000);
+            $block.fadeToggle(2000)
+        });
     });
 </script>
 </body>
