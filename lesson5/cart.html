@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .products{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        p{
+            margin: 0 0 5px 0;
+        }
+        .product{
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 200px;
+        }
+        .desc{
+            padding: 15px;
+            border: 1px solid #c0c0c040;
+        }
+
+    </style>
 </head>
 <body>
 <div id="cart"></div>
 <hr>
-<div id="products"></div>
+<div id="products" class="products"></div>
 
 <script src="jQuery.js"></script>
 <script src="cart.html"></script>

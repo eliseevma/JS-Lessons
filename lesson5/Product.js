@@ -27,12 +27,12 @@ class Product {
 
         let $price = $(`<p> Цена: <span class="product-price">${this.price}</span></p>`,);
 
-        let $buyBtn = $('</button>', {
+        let $buyBtn = $('<button/>', {
             class: 'buyBtn',
             text: 'Купить',
             'data-id': this.id,
             'data-name': this.title,
-            'data-price':this.price
+            'data-price': this.price
         });
 
         //Собираем структуру
