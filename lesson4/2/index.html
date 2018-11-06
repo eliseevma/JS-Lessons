@@ -6,21 +6,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<select name="city" id="city"></select>
-
+<!--<select name="city" id="city"></select>-->
+<div class="wrap">
+    <input type="text" name="city" id="city">
+</div>
+</body>
 <script src="jQuery.js"></script>
 <script>
+
     $(document).ready(() => {
         let list = 'russian-cities.json';
         fetch(list)
             .then(result => result.json())
             .then(data => {
                 let $select = $('#city');
-                for (let city of data){
-                    $select.append($(`<option value="${city.name}">${city.name}</option>`))
+                let $cityData = $('<datalist/>', {
+                    id: 'city-list'
+                });
+                $('.wrap').append($cityData);
+                for (let city of data) {
+                    $cityData.append($(`<option value="${city.name}">${city.name}</option>`));
                 }
+                $select.keyup(() => {
+                    if($select.val().length > 2){
+                        $select.attr('list', $cityData.attr('id'));
+                    }
+                })
             })
-    })
+    });
 </script>
-</body>
 </html>
