@@ -1,0 +1,18 @@
+.wrap{
+    position: relative;
+}
+.list{
+    position: absolute;
+    top: 19px;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+}
+.city {
+    margin: 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all ease-in-out .3s;
+}
+.city:hover{
+    background: darkgray;
+}

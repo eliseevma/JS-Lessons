@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <ul class="tab-wrap">
+        <li><a href="#one" class="tab">Tab1</a></li>
+        <li><a href="#two" class="tab">Tab2</a></li>
+        <li><a href="#three" class="tab">Tab3</a></li>
+        <li><a href="#four" class="tab">Tab4</a></li>
+    </ul>
+    <div id="one" class="itemContent active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque, eligendi, expedita,
+        explicabo facilis illum incidunt inventore ipsa minus neque non ratione vero voluptatum! Aliquid atque cumque
+        eaque facilis fuga impedit in iste labore laudantium magni, maiores, nihil possimus quisquam quod sunt velit
+        voluptatibus. Dolores et excepturi facere maiores officia!
+    </div>
+    <div id="two" class="itemContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium ad adipisci dolor facere
+        fugiat impedit, labore maiores nulla officia quia quibusdam quo rem similique vel velit! Dolore, nostrum.
+    </div>
+    <div id="three" class="itemContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt, incidunt perferendis sed unde
+        voluptas? Dolorem fuga ipsa iure nesciunt perferendis, unde vel? Ab aperiam architecto aspernatur assumenda,
+        autem consequuntur cumque debitis deserunt dolor, dolorem dolores eligendi eos exercitationem fugiat fugit
+        ipsam laborum libero modi necessitatibus nemo perferendis porro quidem repellendus sed tempora tenetur unde,
+        veritatis! Eligendi iste magni ullam!
+    </div>
+    <div id="four" class="itemContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorum minus nisi quas similique, sit!
+    </div>
+</div>
+
+<div class="wrapper vertical-wrap">
+    <ul class="tab-wrap vertical">
+        <li><a href="#one1" class="tab">Tab1</a></li>
+        <li><a href="#two1" class="tab">Tab2</a></li>
+        <li><a href="#three1" class="tab">Tab3</a></li>
+        <li><a href="#four1" class="tab">Tab4</a></li>
+    </ul>
+    <div id="one1" class="itemContent active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque, eligendi, expedita,
+        explicabo facilis illum incidunt inventore ipsa minus neque non ratione vero voluptatum! Aliquid atque cumque
+        eaque facilis fuga impedit in iste labore laudantium magni, maiores, nihil possimus quisquam quod sunt velit
+        voluptatibus. Dolores et excepturi facere maiores officia!
+    </div>
+    <div id="two1" class="itemContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium ad adipisci dolor facere
+        fugiat impedit, labore maiores nulla officia quia quibusdam quo rem similique vel velit! Dolore, nostrum.
+    </div>
+    <div id="three1" class="itemContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt, incidunt perferendis sed unde
+        voluptas? Dolorem fuga ipsa iure nesciunt perferendis, unde vel? Ab aperiam architecto aspernatur assumenda,
+        autem consequuntur cumque debitis deserunt dolor, dolorem dolores eligendi eos exercitationem fugiat fugit
+        ipsam laborum libero modi necessitatibus nemo perferendis porro quidem repellendus sed tempora tenetur unde,
+        veritatis! Eligendi iste magni ullam!
+    </div>
+    <div id="four1" class="itemContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorum minus nisi quas similique, sit!
+    </div>
+</div>
+
+<script src="jQuery.js"></script>
+<script src="jquery.mask.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.tab-wrap').on('click', '.tab:not(.active)', e => {
+            e.preventDefault();
+            $(e.target).closest('.tab-wrap').find('.tab.active').removeClass('active');
+            $(e.target).addClass('active')
+                .closest('.wrapper')
+                .find('.itemContent')
+                .hide();
+            $($(e.target).attr('href')).fadeIn(300);
+        })
+    })
+</script>
+</body>
+</html>
