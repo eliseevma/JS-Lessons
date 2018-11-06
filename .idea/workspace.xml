@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b06d5cd5-18c7-408d-bb4f-80c873751e50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson4/user.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/lesson4.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/lesson4.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +30,7 @@
           <entry key="gitattributes" value="1" />
           <entry key="html" value="16" />
           <entry key="js" value="20" />
-          <entry key="json" value="6" />
+          <entry key="json" value="7" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -39,22 +41,22 @@
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="20" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="tsconfig" value="2" />
+          <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="224" />
-          <entry key="html" value="2219" />
+          <entry key="html" value="2572" />
           <entry key="js" value="2451" />
-          <entry key="json" value="137" />
+          <entry key="json" value="182" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="225" />
-          <entry key="HTML" value="2269" />
-          <entry key="JSON" value="137" />
+          <entry key="HTML" value="2622" />
+          <entry key="JSON" value="182" />
           <entry key="JavaScript" value="2400" />
         </counts>
       </usages-collector>
@@ -118,8 +120,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson4/lesson4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+            <state relative-caret-position="813">
+              <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson4/user.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -141,10 +152,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="tsconfig.json" />
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -184,6 +195,7 @@
         <option value="$PROJECT_DIR$/lesson3/3/index.html" />
         <option value="$PROJECT_DIR$/lesson3/3/style.css" />
         <option value="$PROJECT_DIR$/lesson4/jQuery.js" />
+        <option value="$PROJECT_DIR$/lesson4/user.json" />
         <option value="$PROJECT_DIR$/lesson4/lesson4.html" />
       </list>
     </option>
@@ -291,7 +303,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46824000" />
+    <option name="totallyTimeSpent" value="48152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -516,10 +528,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lesson4/user.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lesson4/lesson4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+        <state relative-caret-position="813">
+          <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
         </state>
       </provider>
     </entry>

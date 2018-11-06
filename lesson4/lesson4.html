@@ -26,7 +26,10 @@
 <button class="open">Open</button>
 <button class="close">Close</button>
 <button class="toggle">Toggle</button>
+<hr>
 
+<div class="ajaxData"></div>
+<button class="ajaxGet">Get data</button>
 <script src="jQuery.js"></script>
 <script>
     console.log(jQuery, $);
@@ -93,6 +96,28 @@
             // $block.slideToggle(2000);
             $block.fadeToggle(2000)
         });
+
+        //AjAX
+        let $ajaxData = $('.ajaxData');
+        let $ajaxBtn = $('.ajaxGet');
+
+        $ajaxBtn.on('click', function () {
+            $.ajax({
+                url: 'user.json',
+                type: 'GET',
+                //async: false // Синхронный
+                dataType: 'json',
+               success: function (data) {
+                   for (let user of data){
+                       let $user = $(`<p>${user.name} - <strong>${user.tell}</strong></p>`);
+                       $ajaxData.append($user);
+                   }
+               },
+                error: function (error) {
+                    console.log(error)
+                }
+            });
+        })
     });
 </script>
 </body>
