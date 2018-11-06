@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        #cart{
+            max-width: 300px;
+        }
+        .cart-item{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px 0;
+        }
+        .cart-item:not(:first-child){
+            border-top: 1px solid black;
+        }
+        .cart-items-wrap{
+            margin: 20px 0;
+        }
+        .cart-summary{
+            text-align: right;
+        }
+        .product-quantity{
+            text-align: center;
+        }
+        .product-price{
+            text-align: right;
+        }
         .products{
             display: flex;
             justify-content: space-evenly;
@@ -22,7 +46,6 @@
             padding: 15px;
             border: 1px solid #c0c0c040;
         }
-
     </style>
 </head>
 <body>
@@ -31,7 +54,7 @@
 <div id="products" class="products"></div>
 
 <script src="jQuery.js"></script>
-<script src="cart.html"></script>
+<script src="Cart.js"></script>
 <script src="Product.js"></script>
 <script src="main.js"></script>
 </body>
