@@ -44,6 +44,11 @@ class Cart{
         $container.append($(`<p class="product-name">${product.product_name}</p>`));
         $container.append($(`<p class="product-quantity">${product.quantity}</p>`));
         $container.append($(`<p class="product-price">${product.price} руб</p>`));
+        let $delBtn = $('<button class="delBtn">&times;</button>');
+        $container.append($delBtn);
+        $delBtn.click(() => {
+            this._remove(product.id_product);
+        });
         $container.appendTo($('.cart-items-wrap'));
     }
     _renderSum(){
@@ -77,7 +82,7 @@ class Cart{
         $container.find('.product-quantity').text(product.quantity);
         $container.find('.product-price').text(`${product.quantity*product.price} руб`);
     }
-    remove(idProduct){
+    _remove(productId){
         //TODO: реализовать удаление элемента корзины
     }
 }

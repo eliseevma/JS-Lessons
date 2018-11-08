@@ -10,7 +10,5 @@ $(document).ready(() => {
     //Обработчик
     $('#products').on('click', '.buyBtn', e => {
         mycart.addProduct(e.target);
-        console.log(e.target);
     });
-    console.log(mycart);
 });
